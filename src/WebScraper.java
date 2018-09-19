@@ -5,7 +5,8 @@ public class WebScraper {
     public static void main(String[] unused) {
         String hamletCopy = urlToString("http://erdani.com/tdpl/hamlet.txt");
         int count = 0;
-        count = hamletCopy.split("prince").length + 1;
+        count = hamletCopy.split("prince").length;
+        count = count + 1;
         System.out.println(count);
 
     }
